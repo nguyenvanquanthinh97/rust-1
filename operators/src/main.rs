@@ -1,5 +1,19 @@
 use std::mem;
 
+// const in rust will only replace the value, and don't have address
+// which mean if we reference a const like this
+// mem::size_of_val(&MEANING_OF_LIFE) is same as mem::size_of_val(&42)
+const MEANING_OF_LIFE: u8 = 42; // No fixed address
+
+// static is same as global in JS
+// Default static will same with all, is immutable
+// to use as mutable, we add mut after static
+// static mut Z:i8 = -69;
+// however to use mutablt static variable, you have to use it in a unsafe scope
+static Z:i8 = -64;
+
+static mut I:i8 = -72;
+
 fn scope_and_shadowing() {
     // suprisingly we can declare duplicate variable which the latter will override the former
     let a = 123;
@@ -59,6 +73,17 @@ fn operators() {
 }
 
 fn main() {
+    println!("global variable");
+    println!("MEANING_OF_LIFE = {}, takes up {} bytes", MEANING_OF_LIFE, mem::size_of_val(&MEANING_OF_LIFE));
+    println!("--------------------");
+    println!("static variable");
+    println!("Before static Z = {}", Z);
+    unsafe {
+        println!("Before static mut I = {}", I);
+        I = -88;
+        println!("After static mut I = {}", I);
+    }
+    println!("--------------------");
     print!("scope_and_shadowing: ");
     scope_and_shadowing();
     println!("--------------------");

@@ -29,6 +29,7 @@ fn main() {
     // usize isize ( variable which is native to that processor, os )
     // usize: unsign type
     // isize: sign type
+    // the default type for whole number is i32
     let z: isize = 123;
     let size_of_z = mem::size_of_val(&z) as i8; // casting type from usize => i8
     println!("z = {}, takes up {} bytes, {}-bits OS", z, size_of_z, size_of_z * 8);

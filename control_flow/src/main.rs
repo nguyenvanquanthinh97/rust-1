@@ -52,6 +52,9 @@ fn while_and_loop(){
 }
 
 fn for_loop(){
+    // 1..11 the upper bound will be 11 (exclusive)
+    // to include upper bound (11) in to range, we use this
+    // 1..=11 (include 11)
     for x in 1..11
     {
         if x == 3 {continue;}
@@ -60,6 +63,15 @@ fn for_loop(){
 
         println!("x = {}", x);
     }
+
+    println!("----");
+
+    for x in 10..=21
+    {
+        println!("x = {}", x);
+    }
+
+    println!("-----");
 
     for (idx, val) in (30..41).enumerate()
     {

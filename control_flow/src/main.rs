@@ -79,6 +79,34 @@ fn for_loop(){
     }
 }
 
+// to get the result of match (will return type &str) => use the comment function below
+// fn match_statement() -> 'static str
+fn match_statement(){
+    let country_code = 46;
+
+    // we have to include all kind of cases that can happen base on type of variable
+    // rust is smart enough to be aware of the kind of variable that you have and depending
+    // on this variable it will actually perform the appropriate checks.
+    let country = match country_code {
+        44 => "UK",
+        46 => "Sweden",
+        7 => "Russia",
+        1..=1000 => "Unknown",
+        _ => "Invalid"
+    };
+
+    println!("the country with code {} is {}", country_code, country);
+
+    // return country
+
+    let x = false;
+
+    let s = match x {
+        true => "true",
+        false => "false"
+    };
+}
+
 fn main() {
     println!("if_statement: ");
     if_statement();
@@ -88,4 +116,7 @@ fn main() {
     println!("--------------");
     println!("for_loop: ");
     for_loop();
+    println!("--------------");
+    match_statement();
+    // result = match_statement();
 }

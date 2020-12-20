@@ -1,3 +1,6 @@
+#[allow(dead_code)]
+mod sh;
+
 use std::mem;
 
 // const in rust will only replace the value, and don't have address
@@ -89,4 +92,6 @@ fn main() {
     println!("--------------------");
     print!("operators: ");
     operators();
+    println!("--------------------");
+    sh::stack_and_heap();
 }

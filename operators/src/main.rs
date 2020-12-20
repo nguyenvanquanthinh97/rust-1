@@ -1,5 +1,22 @@
 use std::mem;
 
+fn scope_and_shadowing() {
+    // suprisingly we can declare duplicate variable which the latter will override the former
+    let a = 123;
+    let a = 246;
+
+    {
+        let b = 456;
+        println!("inside, b = {}", b);
+
+        let a = 777;
+        println!("inside, a = {}", a);
+    }
+
+    println!("outside, a = {}", a);
+    // println!("b = {}", b);
+}
+
 fn operators() {
     // arithmetic
     let mut a = 2 + 3 * 4;// +-*/
@@ -42,5 +59,9 @@ fn operators() {
 }
 
 fn main() {
+    print!("scope_and_shadowing: ");
+    scope_and_shadowing();
+    println!("--------------------");
+    print!("operators: ");
     operators();
 }

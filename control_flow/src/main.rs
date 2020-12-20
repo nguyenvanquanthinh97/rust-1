@@ -51,7 +51,29 @@ fn while_and_loop(){
     }
 }
 
+fn for_loop(){
+    for x in 1..11
+    {
+        if x == 3 {continue;}
+        
+        if x == 8 {break;}
+
+        println!("x = {}", x);
+    }
+
+    for (idx, val) in (30..41).enumerate()
+    {
+        println!("{}: {}", idx, val);
+    }
+}
+
 fn main() {
+    println!("if_statement: ");
     if_statement();
+    println!("--------------");
+    println!("while_and_loop: ");
     while_and_loop();
+    println!("--------------");
+    println!("for_loop: ");
+    for_loop();
 }

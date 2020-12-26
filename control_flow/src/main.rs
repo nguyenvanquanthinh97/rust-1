@@ -1,3 +1,5 @@
+mod combination_lock;
+
 fn if_statement() {
     let tmp = 25;
 
@@ -118,5 +120,6 @@ fn main() {
     for_loop();
     println!("--------------");
     match_statement();
-    // result = match_statement();
+    // let result = match_statement();
+    combination_lock::combination_lock();
 }

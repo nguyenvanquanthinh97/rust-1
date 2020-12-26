@@ -1,3 +1,5 @@
+mod enumerations;
+
 struct Point {
     x: f64,
     y: f64
@@ -19,5 +21,6 @@ fn structures() {
 }
 
 fn main() {
-    structures();
+    // structures();
+    enumerations::enums();
 }

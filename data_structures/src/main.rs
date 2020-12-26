@@ -1,6 +1,7 @@
 mod enumerations;
 mod unions;
 mod options;
+mod arrays;
 
 struct Point {
     x: f64,
@@ -26,5 +27,6 @@ fn main() {
     // structures();
     // enumerations::enums();
     // unions::unions();
-    options::options();
+    // options::options();
+    arrays::arrays();
 }

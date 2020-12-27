@@ -3,6 +3,7 @@ mod unions;
 mod options;
 mod arrays;
 mod slices;
+mod tuple;
 
 struct Point {
     x: f64,
@@ -30,5 +31,6 @@ fn main() {
     // unions::unions();
     // options::options();
     // arrays::arrays();
-    slices::slices();
+    // slices::slices();
+    tuple::tuple();
 }

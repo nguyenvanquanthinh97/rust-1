@@ -5,6 +5,7 @@ mod arrays;
 mod slices;
 mod tuple;
 mod pattern_matching;
+mod generic;
 
 struct Point {
     x: f64,
@@ -34,5 +35,6 @@ fn main() {
     // arrays::arrays();
     // slices::slices();
     // tuple::tuple();
-    pattern_matching::pattern_matching();
+    // pattern_matching::pattern_matching();
+    generic::generics();
 }

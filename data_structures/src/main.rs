@@ -4,6 +4,7 @@ mod options;
 mod arrays;
 mod slices;
 mod tuple;
+mod pattern_matching;
 
 struct Point {
     x: f64,
@@ -32,5 +33,6 @@ fn main() {
     // options::options();
     // arrays::arrays();
     // slices::slices();
-    tuple::tuple();
+    // tuple::tuple();
+    pattern_matching::pattern_matching();
 }

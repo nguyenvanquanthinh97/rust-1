@@ -1,5 +1,7 @@
 mod vector;
+mod hashmap;
 
 fn main() {
-    vector::vector();
+    // vector::vector();
+    hashmap::hashmap();
 }

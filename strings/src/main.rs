@@ -1,5 +1,7 @@
 mod strings;
+mod format;
 
 fn main() {
-    strings::strings();
+    // strings::strings();
+    format::format();
 }

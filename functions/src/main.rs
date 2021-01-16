@@ -1,5 +1,6 @@
 mod methods;
 mod closures;
+mod high_order_functions;
 
 fn println_value(x: i32)
 {
@@ -33,5 +34,6 @@ fn functions()
 fn main() {
     // functions();
     // methods::methods();
-    closures::closures();
+    // closures::closures();
+    high_order_functions::high_order_functions();
 }

@@ -1,4 +1,5 @@
 mod trait_parameters;
+mod into;
 
 trait Animal
 {
@@ -103,5 +104,6 @@ fn traits()
 
 fn main() {
     // traits();
-    trait_parameters::trait_parameters();
+    // trait_parameters::trait_parameters();
+    into::into();
 }

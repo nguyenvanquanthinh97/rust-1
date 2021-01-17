@@ -1,3 +1,5 @@
+mod trait_parameters;
+
 trait Animal
 {
     fn create(name: &'static str) -> Self;
@@ -100,5 +102,6 @@ fn traits()
 }
 
 fn main() {
-    traits();
+    // traits();
+    trait_parameters::trait_parameters();
 }

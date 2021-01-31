@@ -2,6 +2,7 @@ mod trait_parameters;
 mod into;
 mod drop;
 mod operator_overloading;
+mod static_dispatch;
 
 trait Animal
 {
@@ -109,5 +110,6 @@ fn main() {
     // trait_parameters::trait_parameters();
     // into::into();
     // drop::drops();
-    operator_overloading::main();
+    // operator_overloading::main();
+    static_dispatch::main();
 }

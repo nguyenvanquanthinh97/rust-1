@@ -1,6 +1,7 @@
 mod trait_parameters;
 mod into;
 mod drop;
+mod operator_overloading;
 
 trait Animal
 {
@@ -107,5 +108,6 @@ fn main() {
     // traits();
     // trait_parameters::trait_parameters();
     // into::into();
-    drop::drops();
+    // drop::drops();
+    operator_overloading::main();
 }

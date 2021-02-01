@@ -5,6 +5,7 @@ mod operator_overloading;
 mod static_dispatch;
 mod dynamic_dispatch;
 mod why_dynamic_dispatch;
+mod vectors_of_different_objects;
 
 trait Animal
 {
@@ -115,5 +116,7 @@ fn main() {
     // operator_overloading::main();
     // static_dispatch::main();
     // dynamic_dispatch::main();
-    why_dynamic_dispatch::main();
+    // why_dynamic_dispatch::main();
+    // why_dynamic_dispatch::main();
+    vectors_of_different_objects::main();
 }

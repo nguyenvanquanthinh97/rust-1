@@ -4,6 +4,7 @@ mod drop;
 mod operator_overloading;
 mod static_dispatch;
 mod dynamic_dispatch;
+mod why_dynamic_dispatch;
 
 trait Animal
 {
@@ -113,5 +114,6 @@ fn main() {
     // drop::drops();
     // operator_overloading::main();
     // static_dispatch::main();
-    dynamic_dispatch::main();
+    // dynamic_dispatch::main();
+    why_dynamic_dispatch::main();
 }

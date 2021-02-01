@@ -14,18 +14,18 @@ impl Printable for String {
   }
 }
 
-// Static dispatch:
-// Rust will decide which format function will be used at compiler-time
-// Idea for using if we alread know its type
-// Ex: let a:i32 = 123;
-fn print_it<T: Printable>(item: T) {
+// Dynamic dispatch:
+// Rust will decided which format function will be use at run-time
+// Idea for using in an unknow type
+// For instanch:: let test:[Printable] = [1, "haha"]; (Polymorphism)
+fn print_it(item: &Printable) {
   println!("{}", item.format());
-} // monomorphisation
+}
 
 pub fn main() {
   let a:i32 = 123;
   let b:String = "This is a test".to_string();
 
-  print_it(a);
-  print_it(b);
+  print_it(&a);
+  print_it(&b);
 }

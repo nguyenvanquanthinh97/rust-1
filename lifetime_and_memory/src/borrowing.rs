@@ -14,7 +14,9 @@ pub fn main() {
   let mut a = 40;
   let b = &mut a;
   *b += 2;
-  println!("{:?}", a);
+  println!("value of b which reference to a: {:?}", *b);
+  // b has already end of life => we can use again
+  println!("a is borrowing reference: {:?}", a);
 
   for i in v
   {
